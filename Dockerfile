@@ -4,7 +4,7 @@ RUN apt-get update && apt-get install -y software-properties-common && add-apt-r
 
 RUN ln -sfn /usr/bin/python3.6 /usr/bin/python3 && ln -sfn /usr/bin/python3 /usr/bin/python && ln -sfn /usr/bin/pip3 /usr/bin/pip
 
-RUN pip --version
+RUN pwd && ls -l
 
 COPY requirements.txt requirements.txt
 RUN pip install -U -r requirements.txt
