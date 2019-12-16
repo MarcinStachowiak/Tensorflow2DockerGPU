@@ -5,7 +5,7 @@ pipeline {
     stages {
         stage('build') {
             steps {
-                sh 'python -u main.py'
+                sh 'python -u main2.py'
             }
         }
     }
