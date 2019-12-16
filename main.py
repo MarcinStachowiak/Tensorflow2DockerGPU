@@ -6,10 +6,6 @@ from tensorflow.keras.layers import Dense, Flatten, Conv2D
 from tensorflow.keras import Model
 
 
-gpus = tf.config.experimental.list_physical_devices('GPU')
-if gpus:
-    for gpu in gpus:
-        tf.config.experimental.set_memory_growth(gpu, True)
 
 mnist = tf.keras.datasets.mnist
 
